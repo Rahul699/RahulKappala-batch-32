@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const dev_num='DEV';
+        // const test_num='Test';
+        // const stage_num='Stage';
+        // const Prod_num='Prod';
+        // let env= 'Test';
+        // const spending=100;
+        // let final_amount;
+        // if ( env=='DEV'){
+        //     final_amount=spending+(spending*0.1);
+        // }
+        // else if (env=='Test')
+        // {
+        //     final_amount=spending+(spending*0.2);
+        // }
+        // else if (env=='Stage'){
+        //     final_amount=spending+(spending*0.3);
+        // }
+        // else if (env=='Prod'){
+        //     final_amount=spending+(spending*0.05); 
+        // }
+        const dev_num='DEV';
+        const test_num='Test';
+        const stage_num='Stage';
+        const Prod_num='Prod';
+         let env= 'Test';
+         const spending=100;
+         let final_amount;
+         switch(env){
+            case dev_num: final_amount=spending+(spending*0.1);
+            break;
+            case test_num: final_amount=spending+(spending*0.2);
+            break;
+            case stage_num: final_amount=spending+(spending*0.3);
+            break;
+            case Prod_num: final_amount=spending+(spending*0.05);
+            break;
+         }
+
+        console.log(final_amount);
+
+        
+
+        
+
+        
+    </script>
+    
+</body>
+</html>
