@@ -9,10 +9,10 @@
 <body>
     <script>
         let Hobbies=["Watching", " playing","dancing","roaming"]
-        // function hobbyreturn(){
-        //     return Hobbies;
-        // }
-        // console.log(hobbyreturn());
+        function hobbyreturn(){
+            return Hobbies;
+        }
+        console.log(hobbyreturn());
 
         function addHobby(newElement){
             Hobbies.push(newElement);
@@ -20,12 +20,12 @@
         }
         console.log(addHobby("walking"));
 
-        // function delHobby(delElement){
-        //     let index=Hobbies.indexOf(delElement);
-        //     Hobbies.splice(index, 1);
-        //     return Hobbies;
-        // }
-        // console.log(delHobby("playing")); 
+        function delHobby(delElement){
+            let index=Hobbies.indexOf(delElement);
+            Hobbies.splice(index, 1);
+            return Hobbies;
+        }
+        console.log(delHobby("playing")); 
         
     </script>
 </body>
