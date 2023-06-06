@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form id="Personal Details">
+   <label>First Name :</label>
+   <input type="text" id="fname" name="firstName"> <br><br>
+   <label>Last Name :</label>
+   <input type="text" id="lname" name="lastName"> <br><br>
+   <label> Email ID :</label>
+   <input type="email" id="emailid" name="emailId"> <br><br>
+   <label>Date of Birth :</label>
+   <input type="date" id="dob" name="dateofBirth"> <br><br>
+   <label>Phone Number :</label>
+   <input type="tel" id="phnnum" name="phoneNumber"> <br><br>
+   <input type="submit" value="submit" onclick="newprofiledetail(event)">
+</form>
+   <div id="profileResult"></div>
+   <script>
+    function newprofiledetail(event){
+        event.preventDefault();
+
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var emailid = document.getElementById("emailid").value;
+        var dob = document.getElementById("dob").value;
+        var phnnum = document.getElementById("phnnum").value;
+
+        var mydetails = document.getElementById("profileResult");
+        mydetails.innerHTML = "<h2> Personal Details</h2>"+
+                         "<p>First Name: " + fname + "</p>" +
+                            "<p>Last Name: " + lname + "</p>" +
+                            "<p>Email ID: " + emailid + "</p>" +
+                            "<p>Date of Birth: " + dob + "</p>" +
+                            "<p>Phone Number: " + phnnum + "</p>";
+
+
+
+
+
+    }
+   </script>
+</body>
+</html>
